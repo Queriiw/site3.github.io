@@ -10,8 +10,9 @@ body{
 
 .welcome {
     text-align: center;
-    background-color: #fc0000;
+    background-color: #523d32;
     height: 20vh;
+    color: bisque;
 }
 
 .navbar{
@@ -24,6 +25,7 @@ body{
     justify-content:center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar a{
@@ -62,6 +64,40 @@ a:hover{
     font-weight: 700;
     position: absolute;
     left: 10px;
+}
+
+html,
+body {
+    position: relative;
+    height: 60%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 header{
@@ -170,19 +206,21 @@ header p{
     cursor: pointer;
     margin-left: auto;
     margin-right: 20px;
-    z-index: 2;
+    z-index: 20;
     transition: color 0.2s, transform 0.2s;
 }
 
 .hamburger:hover {
-    color: #bfa046;         /* Altın sarısı tonunda renk değişimi */
-    transform: scale(1.15); /* Biraz büyüsün */
+    color: #bfa046;     
+    transform: scale(1.15); 
 }
 
 .nav-links {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .map {
@@ -409,6 +447,8 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+        position: sticky;
+        top: 0;
     }
     .nav-links {
         display: flex;
@@ -418,6 +458,7 @@ footer {
         top: 8vh;
         left: 0;
         width: 100%;
+        z-index: 15;
         background: #fffbf6;
         padding: 10px 0;
         z-index: 1;
@@ -431,7 +472,9 @@ footer {
         opacity: 1;
     }
     .navbar {
-        position: relative;
+        background-color: #fffbf6;
+        position: sticky;
+        top: 0;
         flex-wrap: wrap;
         height: auto;
         justify-content: flex-start;
