@@ -29,7 +29,7 @@ body{
 }
 
 .navbar a{
-    color: #e08f64;
+    color: rgb(190, 163, 130);
     text-decoration: none;
     transition: 0.3s;
     position: relative;
@@ -237,6 +237,7 @@ header p{
     justify-content: center;
     align-items: center; 
     background-color: rgb(173, 173, 173);
+    transition: 0.3s;
 }
 
 .map button {
@@ -253,8 +254,13 @@ header p{
 }
 
 .map button:hover {
-    background: #9b7662;
+    background: bisque;
     transform: scale(1.05);
+    color: #523d32;
+}
+
+.map:has(button:hover) {
+  background-color: #6a87b1;
 }
 
 .adres {
@@ -338,12 +344,11 @@ header p{
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .payment .option img {
-    width: 60px;
+    width: 64px;
     height: 45px;
     margin-bottom: 10px;
 }
