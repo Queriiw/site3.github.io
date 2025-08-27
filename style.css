@@ -8,12 +8,6 @@ body{
     overflow-x: hidden;
 }
 
-.welcome {
-    text-align: center;
-    background-color: #523d32;
-    height: 20vh;
-    color: bisque;
-}
 
 .navbar{
     height: 8vh;
@@ -69,18 +63,21 @@ a:hover{
 html,
 body {
     position: relative;
-    height: 60%;
-}
-
-body {
+    padding: 0;
+    margin: 0;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    margin: 0;
-    padding: 0;
 }
 
 .swiper {
-    width: 100%;
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
     height: 100%;
 }
 
@@ -94,28 +91,48 @@ body {
 }
 
 .swiper-slide img {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 header{
+    position: relative;
     width: 100vw;
     height: 92vh;
-    background-image: url(img/—Pngtree—a\ cup\ with\ strong\ turkish_15478641.png);
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 400px;
 }
 
 header .header-content{
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,0.25);
+    pointer-events: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 1000 !important; 
+    color: #fff !important;
+    pointer-events: auto !important;
+}
+
+.swiper-pagination {
+    z-index: 100 !important;
+    pointer-events: auto !important;
+}
+
+header .header-content * {
+    pointer-events: auto;
 }
 
 header h1{
@@ -509,3 +526,4 @@ footer {
         padding: 1rem 0.5rem;
     }
 }
+
