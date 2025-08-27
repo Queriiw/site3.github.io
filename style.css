@@ -178,6 +178,24 @@ header p{
     min-height: 55vh;
 }
 
+.info-container{
+    margin: 0 auto;
+    width: 30vw;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.info-container:hover{
+    transform: scale(1.03);
+    font-weight: bold;
+}
+
+.info-container:hover .info-desc1{
+    font-weight: 520;
+} 
+
 .line {
     width: 60px;
     height: 3px;
@@ -193,20 +211,13 @@ header p{
     justify-content: center;
 }
 
-.info-content .info-title{
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    text-align: center;
-    width: 100%;
-}
-
 .info-content .info-desc1{
     margin-top: 2vh;
     font-size: 24px;
     font-weight: 420;
     color: #000000;
     text-align: center;
+    width: 100%;
 }
 
 .info-content p{
