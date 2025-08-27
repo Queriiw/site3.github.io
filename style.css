@@ -8,6 +8,9 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 .navbar{
     height: 8vh;
@@ -230,6 +233,9 @@ header p{
 }
 
 .hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: none;
     font-size: 2rem;
     cursor: pointer;

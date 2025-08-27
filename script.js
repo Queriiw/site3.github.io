@@ -13,3 +13,11 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false, 
   },
 });
+
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : 'auto';
+});
