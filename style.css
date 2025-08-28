@@ -26,7 +26,7 @@ html{
 }
 
 .navbar a{
-    color: #d8a86e;
+    color: #926d40;
     text-decoration: none;
     transition: 0.3s;
     position: relative;
@@ -54,7 +54,7 @@ a:hover{
 }
 
 .navbar h2{
-    color: #d8a86e;
+    color: #926d40;
     padding: 0 20px;
     line-height: 8vh;
     font-size: 24px;

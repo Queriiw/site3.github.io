@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">  
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deniz Kafe</title>
@@ -20,14 +19,13 @@
         <div class="hamburger">&#9776;</div>
         <div class="nav-links">
             <a href="index.html">Ana Sayfa</a>
-            <a href="#">Rezervasyon</a>
-            <a href="#scroll">Ödeme Seçenekleri</a>
+            <a href="reservation.html">Rezervasyon</a>
+            <a href="index.html#scroll">Ödeme Seçenekleri</a>
             <a href="#">İletişim</a>
         </div>
     </nav>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
 
     <header>
   <div class="swiper mySwiper">
@@ -43,7 +41,7 @@
   <div class="header-content">
     <h1>Deniz Kafe</h1>
     <p>Hoş geldiniz! En iyi kahve ve tatlılar burada.</p>
-    <button>Rezervasyon Yap</button>
+    <button onclick="location.href='reservation.html'">Rezervasyon Yap</button>
   </div>
 </header>
     
@@ -112,7 +110,7 @@
             </table>
         </div>
     </section>
- 
+ <div id="scroll"></div>
 <section class="payment">
     <h3>Ödeme Seçenekleri</h3>
     <div class="payment-options"> 
@@ -120,7 +118,7 @@
             <img src="img/pngwing.com.png" alt="Nakit">
             <p>Nakit</p>
         </div>
-        <div id="scroll"></div>
+        
         <div class="option">
             <img src="img/pngaaa.com-3962482.png" alt="Kredi Kartı">
             <p>Kredi Kartı</p>
@@ -166,15 +164,5 @@
     <p>&copy; 2025 Tüm Hakları Saklıdır | SIDKI YILDIRIM</p>
   </div>
 </footer>
-
-<script src="script.js"></script>
-
-<script>
-document.querySelector('.hamburger').onclick = function() {
-    document.querySelector('.nav-links').classList.toggle('active');
-};
-</script>
-
-
 </body>
 </html>

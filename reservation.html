@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deniz Kafe</title>
+</head>
+<body>
+<nav class="navbar">
+    <h2>Deniz Kafe</h2>
+    <div class="hamburger">&#9776;</div>
+    <div class="nav-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="reservation.html">Rezervasyon</a>
+        <a href="index.html#scroll">Ödeme Seçenekleri</a>
+        <a href="#">İletişim</a>
+    </div>
+</nav>
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<section class="reservation">
+<form class="reservation-form">       
+    <h2>Rezervasyon Formu</h2>
+    <p>Sevgiyle hazırlanmış masanızı ayırtın, keyifli anlar sizi bekliyor</p>
+    <div class="reservation-container">
+        <select required>
+            <option value="">Kişi Sayısı</option>
+            <option value="1">1 Kişi</option>
+            <option value="2">2 Kişi</option>
+            <option value="3">3 Kişi</option>
+            <option value="4">4 Kişi</option>
+        </select>
+        <input type="text" placeholder="Adınız Soyadınız" required>
+        <input type="email" placeholder="E-posta Adresiniz" required>
+        <input type="tel" placeholder="Telefon" required>
+        
+        <input type="date" required>
+        <button type="submit">Rezervasyon Yap</button>
+    </div>
+</form>
+</section>
+</body>
+</html>
